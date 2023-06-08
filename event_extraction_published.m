@@ -232,8 +232,8 @@ for p = 1:members_no
                 vpd_all{y,x} = vpd3;
             end
         end
-        name_1 = precip_dir1(u).name;
-        name_1_extract = extractBetween(name_1,"RAIN.",".nc");
+%        name_1 = precip_dir1(u).name;
+%        name_1_extract = extractBetween(name_1,"RAIN.",".nc");
 %         save(strcat('analysis_',initial_state{m},'_', num2str(p),'_',[name_1_extract{:}],'.mat'),'vpd_all','qcan_all','qsoil_all','event_timing_all','temp_all','tlai_all','prior_runoff_all','runoff_count_all','qvegt_all','runoff_all', 'et_all', 'precip_all', 'sw_all','prior_precip_all','-nocompression')
 %         clearvars vpd_all qcan_all qsoil_all event_timing_all temp_all tlai_all prior_runoff_all runoff_all sw_all et_all precip_all qvegt_all qsoil_can_all  runoff_count_all;;
     end
