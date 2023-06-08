@@ -69,9 +69,8 @@ for p = 1:length(members)
                 precip3 = precip2(snow_zero,:);
                 precip3(precip3 == 0) = [];
 
-                runoff_hist2_95(y,x,:,i) =prctile(runoff3,95); % prctile of only the rain vents
-
-                precip_hist2_95(y,x,:,i) =prctile(precip3,95); % prctile of only the rain vents
+                runoff_hist2_95(y,x,:,i) =prctile(runoff3,95); 
+                precip_hist2_95(y,x,:,i) =prctile(precip3,95); 
             end
         end
 
